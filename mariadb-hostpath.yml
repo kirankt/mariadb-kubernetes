@@ -7,6 +7,11 @@ spec:
   - port: 3306
   selector:
     app: mariadb
+    service: mariadb
+  labels:
+    app: mariadb
+    service: mariadb
+
 ---
 apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
